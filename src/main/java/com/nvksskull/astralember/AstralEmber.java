@@ -15,6 +15,8 @@ import net.minecraftforge.fml.event.server.FMLServerStartingEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import com.nvksskull.astralember.registry.ModItems;
+
 
 import java.util.stream.Collectors;
 
@@ -23,6 +25,8 @@ import java.util.stream.Collectors;
 public class AstralEmber
 {
     // Directly reference a log4j logger.
+    public static final String MODID = "astralember";
+
     private static final Logger LOGGER = LogManager.getLogger();
 
     public AstralEmber() {
