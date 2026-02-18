@@ -26,6 +26,7 @@ public class AstralEmber
     private static final Logger LOGGER = LogManager.getLogger();
 
     public AstralEmber() {
+        ModItems.ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
         // Register the setup method for modloading
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
         // Register the enqueueIMC method for modloading
@@ -37,6 +38,7 @@ public class AstralEmber
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
+        
     }
 
     private void setup(final FMLCommonSetupEvent event)
